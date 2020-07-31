@@ -1,3 +1,4 @@
 fqdn = "ewalters.xyz"
-api_key = "VwseH46OZiy8serNBaYZ2xNa"
-a_name = "@"
+api_key = "" 
+rrset_name = "@" # name of the record to update
+rrset_type = "A" # type of record to update
