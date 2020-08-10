@@ -20,3 +20,8 @@ ttl = 10800 # the time in seconds that DNS resolvers should cache this record
 ```
 python dynamic_dns_gandi.py
 ```
+
+- Use cron to schedule ddns update:
+Use the command ```bash
+crontab -e and then copy/paste the following into the file to run it every 5 minutes: ```bash
+*/5 * * * * python3 ~/ddns/dynamic_dns_gandi.py >> ~/ddns/cronjob.log 2>&1```
